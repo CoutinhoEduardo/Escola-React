@@ -9,7 +9,6 @@ import TelaCalendario from './TelaCalendario';
 import { Route, Routes } from 'react-router-dom';
 import Login from './Login'
 import Principal from './Principal';
-import PostarAtividade from './PostarAtividade';
 import Matricula from './Matricula'
 import AtividadesExtra from './AtividadesExtra'
 export default function App() {
@@ -22,7 +21,6 @@ export default function App() {
         <Route path="/principal" element={<Principal />} />
         <Route path="/login" element={<Login />} />
         <Route path="/telaCalendario" element={<TelaCalendario />} />
-        <Route path="/postarAtividade" element={<PostarAtividade />} />
         <Route path="/matricula" element={<Matricula />} />
         <Route path="/extras" element={<AtividadesExtra />} />
       </Routes>
