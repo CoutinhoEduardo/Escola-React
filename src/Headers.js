@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import App from './App'
 import {
     Collapse,
     Navbar,
@@ -15,43 +14,67 @@ import {
     NavbarText
 } from 'reactstrap';
 
+
+
 const Headers = (props) => {
+
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
 
+    function alterar_url() {
+        window.location = '/telaCalendario'
+    }
+    function home() {
+        window.location = '/principal'
+    }
+    function matricula() {
+        window.location = '/matricula'
+    }
+    function extras() {
+        window.location = '/extras'
+    }
     return (
+
+
         <div>
             <Navbar color="primary" dark expand="md">
-                <NavbarBrand href="/">Bem Vindo</NavbarBrand>
+                <NavbarBrand onClick={home}>CEP Deyvid Pinto</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="https://celke.com.br/">Site Celke</NavLink>
+                            <NavLink onClick={home}>Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            <NavLink onClick={alterar_url}>Aulas</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="#">Chats</NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
-                                Options
+                                Mais
                             </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem>
-                                    Option 1
+                                <DropdownItem onClick={alterar_url}>
+                                    Agenda de Provas
                                 </DropdownItem>
-                                <DropdownItem>
-                                    Option 2
+                                <DropdownItem onClick={extras}>
+                                    Atividades Extras
+                                </DropdownItem>
+                                <DropdownItem onClick={matricula}>
+                                    Matrícula
                                 </DropdownItem>
                                 <DropdownItem divider />
                                 <DropdownItem>
-                                    Reset
+                                    Configurações
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
+                    <NavbarText>Deyvid Pinto</NavbarText>
                 </Collapse>
             </Navbar>
         </div>

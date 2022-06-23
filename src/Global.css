@@ -1,0 +1,65 @@
+*{
+  margin:0px
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+.sideBar{
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 100vw;
+  position: relative;
+  padding: 30px;
+  margin:0 auto;
+}
+
+footer{
+  max-width: 100vw;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.materia{
+  width: 90vw;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.back{
+ background-color: rgba(0, 0, 0, 0.077); 
+ margin: 0px;
+}
+
+.conteudo{
+  max-width: 50vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+
+  margin:10px;
+}
+
+.formAtividade{
+  margin-top: 3vw;
+  margin-left: 3vw;
+  display: flex;
+  max-width: 40vw;
+  align-items: center;
+  align-content: center;
+}
+
+.extras{
+  position: absolute;
+  left:100vh;
+  width: 50vh;
+}
+
+.progresso{
+  margin-bottom: 20px;
+}
