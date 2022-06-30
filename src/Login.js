@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import logins from "./login.json"
+
 
 class Login extends Component {
     render() {
@@ -6,12 +8,19 @@ class Login extends Component {
             window.location = '/principal'
         }
 
+
+
+
+
+
         function logar() {
 
-            var login = document.getElementById('login').value;
-            var senha = document.getElementById('senha').value;
+            let login = document.getElementById('login').value;
+            let senha = document.getElementById('senha').value;
 
-            if (login == "admin" && senha == "admin") {
+
+
+            if (login == logins.login && senha == logins.senha) {
                 alert('Sucesso');
                 alterar_url()
             } else {

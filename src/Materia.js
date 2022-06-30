@@ -1,13 +1,9 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import './Materia.css'
-import { Card, Button, CardTitle, CardText, Row, Col } from 'reactstrap';
+import { Card, CardTitle, CardText, Row, Col } from 'reactstrap';
 import Modal from './Modal'
 
 const Materia = (props) => {
-
-
-
-
 
     return (
         <div >
